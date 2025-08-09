@@ -1,0 +1,22 @@
+# ['all', 'search', 'check', 'generate', 'metadata', 'update_metadata']
+step: "all"
+model_name: "o3"
+search_model_name: "openai/gpt-4o-mini-search-preview"
+search_api_base: "https://openrouter.ai/api/v1"
+search_api_key: "sk-your-openrouter-key"
+model_api_base: "https://gpt.yunstorm.com/"
+model_api_key: "sk-your-azure-key"
+search_results: "./experiments/search/gpt-4o-mini-search-preview/search_results.json"
+check_result: "check_exist_gated.json"
+metadata_output: "search_set_metadata.json"
+train_set_dir: "./LLaMA-Factory/data/search_dataset"
+# metadata文件包含query信息，agent_query参数现在指向metadata文件
+metadata_file: "./datasets/metadata_paperwithcode.json"
+agent_query: "./datasets/metadata_paperwithcode.json"
+# metadata输出路径配置
+results_output_dir: "./datasets/results"
+max_workers: 5
+num_search: 5
+max_search_retries: 5
+max_samples: 1000
+readme_threshold: 100

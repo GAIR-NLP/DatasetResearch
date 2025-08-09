@@ -1,0 +1,1276 @@
+{
+  "osunlp_AutoSDT-5K": {
+    "file_name": "test_dataset/test_set_generated_1/osunlp_AutoSDT-5K.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "NicolaiSivesind_human-vs-machine": {
+    "file_name": "test_dataset/test_set_generated_1/NicolaiSivesind_human-vs-machine.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "0x7o_ad_detector": {
+    "file_name": "test_dataset/test_set_generated_1/0x7o_ad_detector.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "jeffboudier_argilla-news-summary": {
+    "file_name": "test_dataset/test_set_generated_1/jeffboudier_argilla-news-summary.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "sonlam1102_vihsd": {
+    "file_name": "test_dataset/test_set_generated_1/sonlam1102_vihsd.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "newsmediabias_fake_news_elections_labelled_data": {
+    "file_name": "test_dataset/test_set_generated_1/newsmediabias_fake_news_elections_labelled_data.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "Suyogyart_np20ng": {
+    "file_name": "test_dataset/test_set_generated_1/Suyogyart_np20ng.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "nampdn-ai_tiny-orca-textbooks": {
+    "file_name": "test_dataset/test_set_generated_1/nampdn-ai_tiny-orca-textbooks.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "moremilk_CoT_Philosophical_Understanding": {
+    "file_name": "test_dataset/test_set_generated_1/moremilk_CoT_Philosophical_Understanding.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "opennyaiorg_aalap_instruction_dataset": {
+    "file_name": "test_dataset/test_set_generated_1/opennyaiorg_aalap_instruction_dataset.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "EpistemeAI_alpaca-QA-conciousness-emotions": {
+    "file_name": "test_dataset/test_set_generated_1/EpistemeAI_alpaca-QA-conciousness-emotions.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "jiyounglee0523_TransEnV_mmlu": {
+    "file_name": "test_dataset/test_set_generated_1/jiyounglee0523_TransEnV_mmlu.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "ai4bharat_IN22-Gen": {
+    "file_name": "test_dataset/test_set_generated_1/ai4bharat_IN22-Gen.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "nampdn-ai_tiny-codes": {
+    "file_name": "test_dataset/test_set_generated_1/nampdn-ai_tiny-codes.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "SoftAge-AI_sft-conversational_dataset": {
+    "file_name": "test_dataset/test_set_generated_1/SoftAge-AI_sft-conversational_dataset.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "knkarthick_AMI": {
+    "file_name": "test_dataset/test_set_generated_1/knkarthick_AMI.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "0x7o_spam_detector": {
+    "file_name": "test_dataset/test_set_generated_1/0x7o_spam_detector.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "TheFinAI_flare-fiqasa": {
+    "file_name": "test_dataset/test_set_generated_1/TheFinAI_flare-fiqasa.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "Heng666_TED2020-TW-Corpus": {
+    "file_name": "test_dataset/test_set_generated_1/Heng666_TED2020-TW-Corpus.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "ELiRF_montero2k": {
+    "file_name": "test_dataset/test_set_generated_1/ELiRF_montero2k.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "allmalab_az-multiple-choice-questions": {
+    "file_name": "test_dataset/test_set_generated_1/allmalab_az-multiple-choice-questions.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "TheFinAI_flare-causal20-sc": {
+    "file_name": "test_dataset/test_set_generated_1/TheFinAI_flare-causal20-sc.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "JTBTechnology_taoyuan_travel_qa": {
+    "file_name": "test_dataset/test_set_generated_1/JTBTechnology_taoyuan_travel_qa.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "TheFinAI_en-fpb": {
+    "file_name": "test_dataset/test_set_generated_1/TheFinAI_en-fpb.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "IIC_AQuAS": {
+    "file_name": "test_dataset/test_set_generated_1/IIC_AQuAS.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "sinhala-nlp_NSINA-Categories": {
+    "file_name": "test_dataset/test_set_generated_1/sinhala-nlp_NSINA-Categories.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "opennyaiorg_aibe_dataset": {
+    "file_name": "test_dataset/test_set_generated_1/opennyaiorg_aibe_dataset.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "alibayram_kitapyurdu_yorumlar": {
+    "file_name": "test_dataset/test_set_generated_1/alibayram_kitapyurdu_yorumlar.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "Finding-new-code5_Suzume-Data": {
+    "file_name": "test_dataset/test_set_generated_1/Finding-new-code5_Suzume-Data.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "atlasia_darija-translation": {
+    "file_name": "test_dataset/test_set_generated_1/atlasia_darija-translation.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "TheFinAI_flare-multifin-en": {
+    "file_name": "test_dataset/test_set_generated_1/TheFinAI_flare-multifin-en.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "issai_kazparc": {
+    "file_name": "test_dataset/test_set_generated_1/issai_kazparc.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "dynamoai_dynamoai-benchmark-safety": {
+    "file_name": "test_dataset/test_set_generated_1/dynamoai_dynamoai-benchmark-safety.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "alibayram_beyazperde_yorumlar": {
+    "file_name": "test_dataset/test_set_generated_1/alibayram_beyazperde_yorumlar.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "allenai_xstest-response": {
+    "file_name": "test_dataset/test_set_generated_1/allenai_xstest-response.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "google_coverbench": {
+    "file_name": "test_dataset/test_set_generated_1/google_coverbench.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "Gabrielaz_spamspa": {
+    "file_name": "test_dataset/test_set_generated_1/Gabrielaz_spamspa.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "SulthanAbiyyu_anak-baik": {
+    "file_name": "test_dataset/test_set_generated_1/SulthanAbiyyu_anak-baik.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "neurotechnology_lt_mmlu": {
+    "file_name": "test_dataset/test_set_generated_1/neurotechnology_lt_mmlu.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "higgood_BioWMT18_zh2en": {
+    "file_name": "test_dataset/test_set_generated_1/higgood_BioWMT18_zh2en.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "neurotechnology_lt_arc": {
+    "file_name": "test_dataset/test_set_generated_1/neurotechnology_lt_arc.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "devngho_ko_llm_annotations": {
+    "file_name": "test_dataset/test_set_generated_1/devngho_ko_llm_annotations.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "ayan-sh003_mahahindi-425k": {
+    "file_name": "test_dataset/test_set_generated_1/ayan-sh003_mahahindi-425k.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "leeannielee_taiwan-epilepsy-diagnostic-guidelines-qa": {
+    "file_name": "test_dataset/test_set_generated_1/leeannielee_taiwan-epilepsy-diagnostic-guidelines-qa.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "PardisSzah_DiseaseMatcher": {
+    "file_name": "test_dataset/test_set_generated_1/PardisSzah_DiseaseMatcher.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "ltrciiith_bhashik-parallel-corpora-education": {
+    "file_name": "test_dataset/test_set_generated_1/ltrciiith_bhashik-parallel-corpora-education.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "thunder-research-group_SNU_Ko-ARC": {
+    "file_name": "test_dataset/test_set_generated_1/thunder-research-group_SNU_Ko-ARC.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "moremilk_ToT_Reasoning_Problem_Solving_Dataset_V2": {
+    "file_name": "test_dataset/test_set_generated_1/moremilk_ToT_Reasoning_Problem_Solving_Dataset_V2.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "opencompass_LiveMathBench": {
+    "file_name": "test_dataset/test_set_generated_1/opencompass_LiveMathBench.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "atlasia_TerjamaBench": {
+    "file_name": "test_dataset/test_set_generated_1/atlasia_TerjamaBench.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "ELiRF_UX-comments": {
+    "file_name": "test_dataset/test_set_generated_1/ELiRF_UX-comments.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "ltrciiith_bhashik-parallel-corpora-health": {
+    "file_name": "test_dataset/test_set_generated_1/ltrciiith_bhashik-parallel-corpora-health.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "Keboola_component-expert-QA": {
+    "file_name": "test_dataset/test_set_generated_1/Keboola_component-expert-QA.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "moremilk_ToT-Math-V1": {
+    "file_name": "test_dataset/test_set_generated_1/moremilk_ToT-Math-V1.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "nqdhocai_vietnamese-legal-qa": {
+    "file_name": "test_dataset/test_set_generated_1/nqdhocai_vietnamese-legal-qa.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "LinguaCustodia_dolfin": {
+    "file_name": "test_dataset/test_set_generated_1/LinguaCustodia_dolfin.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "agentlans_real-vs-gpt2-sentences-classification": {
+    "file_name": "test_dataset/test_set_generated_1/agentlans_real-vs-gpt2-sentences-classification.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "moremilk_ToT-Biology": {
+    "file_name": "test_dataset/test_set_generated_1/moremilk_ToT-Biology.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "moremilk_CoT_Music_Production_DAW": {
+    "file_name": "test_dataset/test_set_generated_1/moremilk_CoT_Music_Production_DAW.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "moremilk_CoT_Rare-Diseases_And_Health-Conditions": {
+    "file_name": "test_dataset/test_set_generated_1/moremilk_CoT_Rare-Diseases_And_Health-Conditions.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "kambale_luganda-english-parallel-corpus": {
+    "file_name": "test_dataset/test_set_generated_1/kambale_luganda-english-parallel-corpus.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "sapienzanlp_nlp2025_hw1_cultural_dataset": {
+    "file_name": "test_dataset/test_set_generated_1/sapienzanlp_nlp2025_hw1_cultural_dataset.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "teias-ai_percul": {
+    "file_name": "test_dataset/test_set_generated_1/teias-ai_percul.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "JungIn_alpaca-gpt4-korean": {
+    "file_name": "test_dataset/test_set_generated_1/JungIn_alpaca-gpt4-korean.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "moremilk_CoT-Reasoning_Cultural_Nuances": {
+    "file_name": "test_dataset/test_set_generated_1/moremilk_CoT-Reasoning_Cultural_Nuances.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "UBC-NLP_palmx_2025_subtask1_culture": {
+    "file_name": "test_dataset/test_set_generated_1/UBC-NLP_palmx_2025_subtask1_culture.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "mrince_CBRT-MPC-SummaryReports": {
+    "file_name": "test_dataset/test_set_generated_1/mrince_CBRT-MPC-SummaryReports.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "mavenintel_MedXQA": {
+    "file_name": "test_dataset/test_set_generated_1/mavenintel_MedXQA.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "moremilk_CoT_Reasoning_Python_General_Query": {
+    "file_name": "test_dataset/test_set_generated_1/moremilk_CoT_Reasoning_Python_General_Query.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "moremilk_CoT_Neurodivergent_vs_Neurotypical_Interactions": {
+    "file_name": "test_dataset/test_set_generated_1/moremilk_CoT_Neurodivergent_vs_Neurotypical_Interactions.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "liboaccn_nmt-parallel-corpus": {
+    "file_name": "test_dataset/test_set_generated_1/liboaccn_nmt-parallel-corpus.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "UBC-NLP_palmx_2025_subtask2_islamic": {
+    "file_name": "test_dataset/test_set_generated_1/UBC-NLP_palmx_2025_subtask2_islamic.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "jason23322_high-accuracy-email-classifier": {
+    "file_name": "test_dataset/test_set_generated_1/jason23322_high-accuracy-email-classifier.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "mikemoe_new_dataset": {
+    "file_name": "test_dataset/test_set_generated_1/mikemoe_new_dataset.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "facebook_bouquet": {
+    "file_name": "test_dataset/test_set_generated_1/facebook_bouquet.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "AhmedSSoliman_CodeXGLUE-CONCODE": {
+    "file_name": "test_dataset/test_set_generated_2/AhmedSSoliman_CodeXGLUE-CONCODE.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "dz1_CodeScore-HumanEval-ET": {
+    "file_name": "test_dataset/test_set_generated_2/dz1_CodeScore-HumanEval-ET.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "bigcode_bigcodebench": {
+    "file_name": "test_dataset/test_set_generated_2/bigcode_bigcodebench.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "Qurrent_RES-Q": {
+    "file_name": "test_dataset/test_set_generated_2/Qurrent_RES-Q.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "PatrickHaller_pecc": {
+    "file_name": "test_dataset/test_set_generated_2/PatrickHaller_pecc.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "onekq-ai_WebApp1K-Duo-React": {
+    "file_name": "test_dataset/test_set_generated_2/onekq-ai_WebApp1K-Duo-React.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "BEE-spoke-data_code_contests_instruct": {
+    "file_name": "test_dataset/test_set_generated_2/BEE-spoke-data_code_contests_instruct.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "dz1_CodeScore-MBPP-ET": {
+    "file_name": "test_dataset/test_set_generated_2/dz1_CodeScore-MBPP-ET.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "giulio98_spider-2048": {
+    "file_name": "test_dataset/test_set_generated_2/giulio98_spider-2048.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "yhavinga_cnn_dailymail_dutch": {
+    "file_name": "test_dataset/test_set_generated_2/yhavinga_cnn_dailymail_dutch.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "Starscream-11813_ParaMAWPS": {
+    "file_name": "test_dataset/test_set_generated_2/Starscream-11813_ParaMAWPS.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "allenai_winogrande": {
+    "file_name": "test_dataset/test_set_generated_2/allenai_winogrande.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "google_boolq": {
+    "file_name": "test_dataset/test_set_generated_2/google_boolq.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "Rowan_hellaswag": {
+    "file_name": "test_dataset/test_set_generated_2/Rowan_hellaswag.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "ofir408_MedConceptsQA": {
+    "file_name": "test_dataset/test_set_generated_2/ofir408_MedConceptsQA.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "ai4cloud_CloudEval-YAML": {
+    "file_name": "test_dataset/test_set_generated_2/ai4cloud_CloudEval-YAML.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "AI-MO_minif2f_test": {
+    "file_name": "test_dataset/test_set_generated_2/AI-MO_minif2f_test.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "cat-searcher_minif2f-lean4": {
+    "file_name": "test_dataset/test_set_generated_2/cat-searcher_minif2f-lean4.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "TIGER-Lab_TheoremQA": {
+    "file_name": "test_dataset/test_set_generated_2/TIGER-Lab_TheoremQA.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "iohadrubin_wikitext-103-raw-v1": {
+    "file_name": "test_dataset/test_set_generated_2/iohadrubin_wikitext-103-raw-v1.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "Skylion007_openwebtext": {
+    "file_name": "test_dataset/test_set_generated_2/Skylion007_openwebtext.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "sileod_movie_recommendation": {
+    "file_name": "test_dataset/test_set_generated_2/sileod_movie_recommendation.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "microsoft_xglue": {
+    "file_name": "test_dataset/test_set_generated_2/microsoft_xglue.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "openlifescienceai_medmcqa": {
+    "file_name": "test_dataset/test_set_generated_2/openlifescienceai_medmcqa.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "webnlg-challenge_web_nlg": {
+    "file_name": "test_dataset/test_set_generated_2/webnlg-challenge_web_nlg.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "DFKI-SLT_cross_ner": {
+    "file_name": "test_dataset/test_set_generated_2/DFKI-SLT_cross_ner.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "stanfordnlp_wikitablequestions": {
+    "file_name": "test_dataset/test_set_generated_2/stanfordnlp_wikitablequestions.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "HanSolo9682_Vinoground": {
+    "file_name": "test_dataset/test_set_generated_2/HanSolo9682_Vinoground.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "facebook_anli": {
+    "file_name": "test_dataset/test_set_generated_2/facebook_anli.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "wenhu_tab_fact": {
+    "file_name": "test_dataset/test_set_generated_2/wenhu_tab_fact.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "Muennighoff_xwinograd": {
+    "file_name": "test_dataset/test_set_generated_2/Muennighoff_xwinograd.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "mteb_summeval": {
+    "file_name": "test_dataset/test_set_generated_2/mteb_summeval.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "huuuyeah_meetingbank": {
+    "file_name": "test_dataset/test_set_generated_2/huuuyeah_meetingbank.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "knkarthick_samsum": {
+    "file_name": "test_dataset/test_set_generated_2/knkarthick_samsum.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "ccdv_arxiv-summarization": {
+    "file_name": "test_dataset/test_set_generated_2/ccdv_arxiv-summarization.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "albertvillanova_meqsum": {
+    "file_name": "test_dataset/test_set_generated_2/albertvillanova_meqsum.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "yinzhu-quan_econ_logic_qa": {
+    "file_name": "test_dataset/test_set_generated_2/yinzhu-quan_econ_logic_qa.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "nguha_legalbench": {
+    "file_name": "test_dataset/test_set_generated_2/nguha_legalbench.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "Hellisotherpeople_DebateSum": {
+    "file_name": "test_dataset/test_set_generated_2/Hellisotherpeople_DebateSum.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "UKPLab_PeerQA": {
+    "file_name": "test_dataset/test_set_generated_2/UKPLab_PeerQA.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "wmt2014-french-english": {
+    "file_name": "test_dataset/test_set_generated_2/wmt2014-french-english.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "wmt2016-romanian-english": {
+    "file_name": "test_dataset/test_set_generated_2/wmt2016-romanian-english.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "wmt2014-english-french": {
+    "file_name": "test_dataset/test_set_generated_2/wmt2014-english-french.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "pbevan11_EQ-Bench": {
+    "file_name": "test_dataset/test_set_generated_2/pbevan11_EQ-Bench.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "allenai_lila": {
+    "file_name": "test_dataset/test_set_generated_2/allenai_lila.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "realtreetune_aime24": {
+    "file_name": "test_dataset/test_set_generated_2/realtreetune_aime24.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "zwhe99_amc23": {
+    "file_name": "test_dataset/test_set_generated_2/zwhe99_amc23.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "GEM_e2e_nlg": {
+    "file_name": "test_dataset/test_set_generated_2/GEM_e2e_nlg.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "oos-cg": {
+    "file_name": "test_dataset/test_set_generated_2/oos-cg.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "p-stance": {
+    "file_name": "test_dataset/test_set_generated_2/p-stance.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "gagan3012_grover-data": {
+    "file_name": "test_dataset/test_set_generated_2/gagan3012_grover-data.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "L4NLP_LEval": {
+    "file_name": "test_dataset/test_set_generated_2/L4NLP_LEval.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "mteb_sts12-sts": {
+    "file_name": "test_dataset/test_set_generated_2/mteb_sts12-sts.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "rohitsaxena_MENSA": {
+    "file_name": "test_dataset/test_set_generated_2/rohitsaxena_MENSA.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "IWSLT_iwslt2017": {
+    "file_name": "test_dataset/test_set_generated_2/IWSLT_iwslt2017.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "mteb_multilingual-scala-classification": {
+    "file_name": "test_dataset/test_set_generated_2/mteb_multilingual-scala-classification.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "fancyzhx_ag_news": {
+    "file_name": "test_dataset/test_set_generated_2/fancyzhx_ag_news.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "NEUDM_aste-data-v2": {
+    "file_name": "test_dataset/test_set_generated_2/NEUDM_aste-data-v2.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "alexcadillon_SemEval2014Task4": {
+    "file_name": "test_dataset/test_set_generated_2/alexcadillon_SemEval2014Task4.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "tasd": {
+    "file_name": "test_dataset/test_set_generated_2/tasd.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "NEUDM_acos": {
+    "file_name": "test_dataset/test_set_generated_2/NEUDM_acos.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "facebook_xnli": {
+    "file_name": "test_dataset/test_set_generated_2/facebook_xnli.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "innodatalabs_rt-inod-bias": {
+    "file_name": "test_dataset/test_set_generated_2/innodatalabs_rt-inod-bias.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "McGill-NLP_stereoset": {
+    "file_name": "test_dataset/test_set_generated_2/McGill-NLP_stereoset.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "Hellisotherpeople_Lipogram-e": {
+    "file_name": "test_dataset/test_set_generated_2/Hellisotherpeople_Lipogram-e.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "GuoZiming_MMSQL": {
+    "file_name": "test_dataset/test_set_generated_2/GuoZiming_MMSQL.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "big-bench-snarks": {
+    "file_name": "test_dataset/test_set_generated_2/big-bench-snarks.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "av-generation_oa-mine-dataset": {
+    "file_name": "test_dataset/test_set_generated_2/av-generation_oa-mine-dataset.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "matejklemen_falko_merlin": {
+    "file_name": "test_dataset/test_set_generated_2/matejklemen_falko_merlin.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "HPLT_ua-gec": {
+    "file_name": "test_dataset/test_set_generated_2/HPLT_ua-gec.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "stanfordnlp_web_questions": {
+    "file_name": "test_dataset/test_set_generated_2/stanfordnlp_web_questions.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "mteb_sickr-sts": {
+    "file_name": "test_dataset/test_set_generated_2/mteb_sickr-sts.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "RobZamp_sick": {
+    "file_name": "test_dataset/test_set_generated_2/RobZamp_sick.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "mteb_norquad_retrieval": {
+    "file_name": "test_dataset/test_set_generated_2/mteb_norquad_retrieval.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "facebook_asset": {
+    "file_name": "test_dataset/test_set_generated_2/facebook_asset.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "EMBO_BLURB": {
+    "file_name": "test_dataset/test_set_generated_2/EMBO_BLURB.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "ibm-research_finqa": {
+    "file_name": "test_dataset/test_set_generated_2/ibm-research_finqa.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "MapEval_MapEval-Textual": {
+    "file_name": "test_dataset/test_set_generated_2/MapEval_MapEval-Textual.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "gagan3012_temporal_qa": {
+    "file_name": "test_dataset/test_set_generated_2/gagan3012_temporal_qa.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "sherelyn912_fiqa-2018": {
+    "file_name": "test_dataset/test_set_generated_2/sherelyn912_fiqa-2018.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "vnhsge-mathematics-1": {
+    "file_name": "test_dataset/test_set_generated_2/vnhsge-mathematics-1.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "allenai_social_i_qa": {
+    "file_name": "test_dataset/test_set_generated_2/allenai_social_i_qa.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "tiq": {
+    "file_name": "test_dataset/test_set_generated_2/tiq.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "qiaojin_PubMedQA": {
+    "file_name": "test_dataset/test_set_generated_2/qiaojin_PubMedQA.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "MapEval_MapEval-API": {
+    "file_name": "test_dataset/test_set_generated_2/MapEval_MapEval-API.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "vnhsge-literature": {
+    "file_name": "test_dataset/test_set_generated_2/vnhsge-literature.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "vnhsge-physics": {
+    "file_name": "test_dataset/test_set_generated_2/vnhsge-physics.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "shulijia_MNLP_M3_mcqa_dataset_obqa_m1_qasc": {
+    "file_name": "test_dataset/test_set_generated_2/shulijia_MNLP_M3_mcqa_dataset_obqa_m1_qasc.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "graphquestions": {
+    "file_name": "test_dataset/test_set_generated_2/graphquestions.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "vnhsge-biology": {
+    "file_name": "test_dataset/test_set_generated_2/vnhsge-biology.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "chromeNLP_quality": {
+    "file_name": "test_dataset/test_set_generated_2/chromeNLP_quality.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "AdaptLLM_ConvFinQA": {
+    "file_name": "test_dataset/test_set_generated_2/AdaptLLM_ConvFinQA.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "drt_kqa_pro": {
+    "file_name": "test_dataset/test_set_generated_2/drt_kqa_pro.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "timequestions": {
+    "file_name": "test_dataset/test_set_generated_2/timequestions.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "vnhsge-chemistry": {
+    "file_name": "test_dataset/test_set_generated_2/vnhsge-chemistry.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "chiayewken_bamboogle": {
+    "file_name": "test_dataset/test_set_generated_2/chiayewken_bamboogle.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "PharMolix_PubChemQA": {
+    "file_name": "test_dataset/test_set_generated_2/PharMolix_PubChemQA.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "SetFit_sst5": {
+    "file_name": "test_dataset/test_set_generated_2/SetFit_sst5.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "devs9_sst3": {
+    "file_name": "test_dataset/test_set_generated_2/devs9_sst3.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "abisee_cnn_dailymail": {
+    "file_name": "test_dataset/test_set_generated_2/abisee_cnn_dailymail.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "big-bench-causal-judgment": {
+    "file_name": "test_dataset/test_set_generated_2/big-bench-causal-judgment.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "big-bench-disambiguation-qa": {
+    "file_name": "test_dataset/test_set_generated_2/big-bench-disambiguation-qa.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "big-bench-formal-fallacies-syllogisms": {
+    "file_name": "test_dataset/test_set_generated_2/big-bench-formal-fallacies-syllogisms.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "big-bench-penguins-in-a-table": {
+    "file_name": "test_dataset/test_set_generated_2/big-bench-penguins-in-a-table.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "ambean_lingOly": {
+    "file_name": "test_dataset/test_set_generated_2/ambean_lingOly.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "agentsynth": {
+    "file_name": "test_dataset/test_set_generated_2/agentsynth.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  },
+  "stanfordnlp_coqa": {
+    "file_name": "test_dataset/test_set_generated_2/stanfordnlp_coqa.json",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
+  }
+}

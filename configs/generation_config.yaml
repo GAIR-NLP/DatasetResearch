@@ -1,0 +1,114 @@
+# Generation Agent Configuration
+# 合成数据生成配置文件
+
+# 输入文件路径配置
+input_files:
+  # metadata文件路径（包含query信息）
+  metadata_file: "/home/ubuntu/DatasetResearch/datasets/metadata_paperwithcode.json"
+  # agent query文件路径（兼容性保留，现在直接从metadata_file获取）
+  agent_query_file: "/home/ubuntu/DatasetResearch/datasets/metadata_paperwithcode.json"
+
+# 输出路径配置
+output_paths:
+  # 带样例数据输出目录
+  w_example_output_dir: "./LLaMA-Factory/data/synthesis"
+  # 不带样例数据输出目录
+  wo_example_output_dir: "./LLaMA-Factory/data/synthesis"
+  # 结果文件名
+  results_filename: "generation_results.json"
+  # 更新后的metadata输出目录
+  results_output_dir: "/home/ubuntu/DatasetResearch/datasets/results"
+
+# 生成参数配置
+generation_params:
+  # 每个数据集生成的数据条数
+  num_data: 50
+  # 最大并发线程数
+  max_workers: 20
+  # JSON解析失败最大重试次数
+  max_json_retries: 3
+  # LLM API调用失败最大重试次数
+  max_llm_retries: 3
+
+# Azure OpenAI API配置
+azure_openai:
+  # API端点
+  api_endpoint: "https://guohe-apim.azure-api.net"
+  # API密钥 (可通过环境变量覆盖: AZURE_OPENAI_API_KEY)
+  api_key: "f847dd7d5eff4fc0bff57d061813a4ab"
+  # API版本
+  api_version: "2025-01-01-preview"
+  # 使用的模型
+  model: "o3"
+
+# 数据处理配置
+data_processing:
+  # 检查已存在文件时的最小文件大小（字节）
+  min_file_size: 10
+  # 是否跳过已存在的有效文件
+  skip_existing: true
+  # 是否显示详细进度信息
+  verbose: true
+
+# 系统提示词配置
+prompts:
+  # 系统提示词
+  system_prompt: "You are a specialized expert in fine-tuning data synthesis. You excel at generating high-quality synthetic datasets for specific requirements."
+  
+  # 带样例的生成提示词模板
+  with_example_template: |
+    You are a specialized expert in fine-tuning data synthesis. You have the following dataset search requirement: {agent_query}
+
+    Your task is to directly synthesize {num_data} corresponding examples based on this requirement. The goal is to create synthetic data that, when used for fine-tuning a large language model, will achieve better performance than fine-tuning on existing datasets found through the search.
+
+    Here is a reference example for guidance: {example_data}
+
+    You MUST output exactly {num_data} samples in JSON list format, where each sample contains only "input" and "output" fields, following this exact format:
+
+    [
+      {{
+        "input": "...",
+        "output": "..."
+      }},
+      {{
+        "input": "...",
+        "output": "..."
+      }},
+      ...
+    ]
+
+    Important requirements:
+    1. Generate EXACTLY {num_data} examples
+    2. Each example must have only "input" and "output" fields
+    3. Follow the task type and domain specified in the search requirement
+    4. Use the reference example to understand the expected format and style
+    5. Ensure diversity across your generated examples
+    6. Focus on creating high-quality data that will improve model performance through fine-tuning
+
+  # 不带样例的生成提示词模板
+  without_example_template: |
+    You are a specialized expert in fine-tuning data synthesis. You have the following dataset search requirement: {agent_query}
+
+    Your task is to directly synthesize {num_data} corresponding examples based on this requirement. The goal is to create synthetic data that, when used for fine-tuning a large language model, will achieve better performance than fine-tuning on existing datasets found through the search.
+
+    You MUST output exactly {num_data} samples in JSON list format, where each sample contains only "input" and "output" fields, following this exact format:
+
+    [
+      {{
+        "input": "...",
+        "output": "..."
+      }},
+      {{
+        "input": "...",
+        "output": "..."
+      }},
+      ...
+    ]
+
+    Important requirements:
+    1. Generate EXACTLY {num_data} examples
+    2. Each example must have only "input" and "output" fields
+    3. Follow the task type and domain specified in the search requirement
+    4. Ensure diversity across your generated examples
+    5. Focus on creating high-quality data that will improve model performance through fine-tuning
+    6. Analyze the search requirement carefully to understand the expected input/output format and content

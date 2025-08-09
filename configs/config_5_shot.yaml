@@ -1,0 +1,143 @@
+# Deep Dataset Evaluation Framework Configuration
+# evaluation config for 5-shot
+
+workspace: "/home/ubuntu/DatasetResearch"
+llamafactory_dir: "/home/ubuntu/DatasetResearch/LLaMA-Factory"
+
+# choice question datasets
+mcq_datasets:
+  - "mmlu"
+  - "ceval" 
+  - "cmmlu"
+  - "arc"
+  - "hellaswag"
+  - "winogrande"
+
+# model configs
+models:
+  llama3_8b:
+    name: "llama3_8b"
+    base_model: "models/LLama3/Llama-3.1-8B"
+    template: "llama3"
+    finetuning_type: "full"
+    lora_rank: 8
+    lora_target: "all"
+    
+    # training params
+    batch_size: 1
+    gradient_accumulation_steps: 2
+    learning_rate: 1.0e-5
+    num_train_epochs: 3.0
+    lr_scheduler_type: "cosine"
+    warmup_ratio: 0.1
+    cutoff_len: 4096
+    max_samples: 1000
+    few_shot: true
+    n_shot: 5
+    bf16: true
+    
+    # inference params
+    max_new_tokens: 1024
+    temperature: 0.1
+    top_p: 0.9
+    inference_batch_size: 64
+    
+    # timeout settings
+    training_timeout: 14400  # 4 hours
+    inference_timeout: 7200  # 1 hour
+    
+    # System prompt
+    system_prompt: "You are a helpful assistant that provides accurate and detailed answers."
+
+  qwen2_7b:
+    name: "qwen2_7b"
+    base_model: "models/Qwen/Qwen2.5-7B-Instruct"
+    template: "qwen"
+    finetuning_type: "lora"
+    lora_rank: 8
+    lora_target: "all"
+    
+    # training params
+    batch_size: 1
+    gradient_accumulation_steps: 8
+    learning_rate: 1.0e-4
+    num_train_epochs: 3.0
+    lr_scheduler_type: "cosine"
+    warmup_ratio: 0.1
+    cutoff_len: 2048
+    max_samples: null
+    bf16: true
+    
+    # inference params
+    max_new_tokens: 1024
+    temperature: 0.1
+    top_p: 0.9
+    inference_batch_size: 64
+    
+    # timeout settings
+    training_timeout: 14400
+    inference_timeout: 3600
+    
+    # System prompt
+    system_prompt: "你是一个专业的AI助手，请提供准确详细的回答。"
+
+  # quick test config (small scale training)
+  llama3_8b_test:
+    name: "llama3_8b_test"
+    base_model: "models/LLama3/Llama-3.1-8B"
+    template: "llama3"
+    finetuning_type: "lora"
+    lora_rank: 8
+    lora_target: "all"
+    
+    # quick test params
+    batch_size: 2
+    gradient_accumulation_steps: 4
+    learning_rate: 2.0e-4
+    num_train_epochs: 1.0
+    lr_scheduler_type: "cosine"
+    warmup_ratio: 0.1
+    cutoff_len: 1024
+    max_samples: 100  # only use 100 samples for quick test
+    bf16: true
+    
+    # inference params
+    max_new_tokens: 512
+    temperature: 0.1
+    top_p: 0.9
+    inference_batch_size: 32
+    
+    # shorter timeout settings
+    training_timeout: 1800  # 30 minutes
+    inference_timeout: 600   # 10 minutes
+    
+    system_prompt: "You are a helpful assistant."
+
+# evaluation configs for specific datasets
+evaluation_configs:
+  triviaqa:
+    ground_truth_file: "data/triviaqa/test_answers.jsonl"
+    metrics: ["exact_match", "f1"]
+  
+  mmlu:
+    # MMLU usually evaluate directly from model output, no extra ground truth file
+    
+  ceval:
+    # C-Eval evaluation config
+    
+  custom_qa:
+    ground_truth_file: "data/custom/test_answers.jsonl"
+    metric: "exact_match"
+
+# default SFT config (can be overridden by model specific configs)
+default_sft_config:
+  preprocessing_num_workers: 16
+  dataloader_num_workers: 4
+  logging_steps: 10
+  save_steps: 1000
+  plot_loss: true
+  overwrite_output_dir: true
+  save_only_model: false
+  report_to: "none"
+  ddp_timeout: 180000000
+  resume_from_checkpoint: null

@@ -1,0 +1,201 @@
+# Metadata Generation & Evaluation Configuration
+# 元数据生成与评估配置文件
+
+# Pipeline 控制配置
+pipeline:
+  # 执行步骤控制
+  steps:
+    generate_metadata: true    # 是否生成metadata
+    evaluate_metadata: true   # 是否评估metadata
+  
+  # 处理模式
+  mode: "full"  # full | generate_only | evaluate_only
+
+# 元数据生成配置
+metadata_generation:
+  # 输入数据路径模板
+  input_data_template: "LLaMA-Factory/data/deep_research_dataset/{model}/{dataset_id}.json"
+  # 生成时使用的样本数量
+  samples_count: 5
+  # 支持的模型列表
+  models:
+    - "o3-w"
+    - "o3-wo" 
+    - "gemini"
+    - "grok"
+    - "openai"
+  
+  # 输出路径配置
+  output_paths:
+    generation_metadata_template: "datasets/results/generation_metadata_{model}.json"
+  
+  # 生成参数配置
+  generation_params:
+    max_retries: 10
+    retry_interval: 1
+    samples_per_task: 5
+    enable_incremental: true  # 是否启用增量写入（避免重复处理）
+
+# 输入文件配置
+input_files:
+  # 待评估的元数据JSON文件路径
+  json_file_path: "./datasets/test_set_metadata.json"
+  
+  # 数据源文件映射
+  data_sources:
+    search_datasets:
+      gpt-4o-search-preview: "datasets/results/search_gpt-4o-search-preview.json"
+      gpt-4o-mini-search-preview: "datasets/results/search_gpt-4o-mini-search-preview.json"
+    
+    generation_datasets:
+      o3-w: "datasets/results/generation_metadata_o3-w.json"
+      o3-wo: "datasets/results/generation_metadata_o3-wo.json"
+      gemini: "datasets/results/generation_metadata_gemini.json"
+      grok: "datasets/results/generation_metadata_grok.json"
+      openai: "datasets/results/generation_metadata_openai.json"
+
+# 批量评估配置
+batch_evaluation:
+  # 是否启用批量评估
+  enabled: false
+  
+  # 评估组合配置
+  comparison_groups:
+    search_vs_generation:
+      - source: "gpt-4o-search-preview"
+        targets: ["o3-w", "o3-wo", "gemini"]
+      - source: "gpt-4o-mini-search-preview"
+        targets: ["o3-w", "o3-wo"]
+    
+    generation_vs_generation:
+      - source: "o3-w"
+        targets: ["o3-wo", "gemini", "grok"]
+
+# 输出路径配置
+output_paths:
+  # 输出结果目录
+  output_dir: "./evaluation/results/metadata_evaluation/"
+  # 输出文件名模板（会根据模型名称生成）
+  output_filename_template: "metadata_evaluation_{model_name}.json"
+  # 最终统计结果文件名
+  final_results_filename: "final_evaluation_results.json"
+
+# 评估参数配置
+evaluation_params:
+  # 评估的维度列表
+  dimensions:
+    - "introduction"
+    - "task"
+    - "question"
+    - "input"
+    - "output"
+    - "source"
+    - "example"
+    - "samples_count"
+  
+  # 评分范围
+  score_range:
+    min: 0
+    max: 10
+  
+  # 处理配置
+  batch_size: 1  # 每批处理的数据量
+  save_intermediate: true  # 是否保存中间结果
+  verbose: true  # 是否显示详细输出
+
+# LLM API配置
+llm_config:
+  # 模型名称
+  model_name: "gpt-4o-search-preview"
+  # API模型
+  api_model: "o3"
+  # API基础URL
+  api_base: "https://gpt.yunstorm.com/"
+  # API密钥 (可通过环境变量覆盖: LLM_API_KEY)
+  api_key: "f847dd7d5eff4fc0bff57d061813a4ab"
+  # 最大重试次数
+  max_retries: 10
+  # 重试间隔（秒）
+  retry_interval: 1
+
+# 提示词配置
+prompts:
+  # 元数据生成系统提示词
+  generation_system_prompt: "You are an expert in dataset analysis and language model fine-tuning. You are given 5 representative input/output examples of a task instance. Please analyze and output the following metadata in JSON format (fields: introduction, task_type, input, output, source, example, samples_count)."
+  
+  # 元数据生成用户提示词模板
+  generation_user_template: |
+    You are an expert in dataset analysis and language model fine-tuning.
+    Below is 5 representative input/output examples.
+    Please analyze and output the following metadata in JSON format (fields: introduction, task_type, input, output, source, example, samples_count).
+
+    Input/Output Examples:
+    {examples}
+
+    Please output in the following JSON format:
+    {{
+        'introduction': 'task and area description of this task instance',
+        'task': 'task type, you can only choose from the following types: text-generation, summarization, translation, question-answering, multiple-choice text-classification.',
+        'question': 'Question Content Type - Describes the primary knowledge domains and content types covered by the questions in the test dataset, such as open-domain knowledge of film and entertainment, scientific common sense, history and geography, literature and arts, sports news, and professional technical fields.',
+        'input': 'Structured retrieval results and contextual information - Input consists of formatted search results containing metadata fields such as descriptions, display URLs, titles, actual URLs, and ranking information, along with potential tabular data, document snippets, and conversational dialogue history for multi-turn scenarios.',
+        'output': 'Direct factual answer format - Outputs are concise, definitive answers that directly address the question based on the provided context, formatted as complete statements such as 'The answer is [specific fact]' for factual queries, numerical values for arithmetic problems, and explicit acknowledgment when questions cannot be answered.',
+        'source': 'synthetic data',
+        'example': 'give an input/output example',
+        'samples_count': number of samples in the dataset
+    }}
+  
+  # 系统提示词（用于元数据评估）
+  system_prompt: "You are a professional dataset metadata comparison assistant that can evaluate the similarity between two dataset metadata descriptions across multiple dimensions."
+  
+  # 比较提示词模板
+  comparison_template: |
+    I need you to compare two dataset metadata and score their matching degree across the following dimensions.
+
+    Dimension descriptions:
+    - introduction: Dataset introduction and overview
+    - task: Task type (e.g., text-classification, question-answering, summarization, text-generation, translation, etc.)
+    - question: Question Content Type - Describes the primary knowledge domains and content types covered by the questions in the test dataset, such as open-domain knowledge of film and entertainment, scientific common sense, history and geography, literature and arts, sports news, and professional technical fields.
+    - input: Description of input content
+    - output: Description of output content
+    - source: Data source (e.g., human-generated, machine-generated, etc.)
+    - example: Sample data
+    - samples_count: Number of samples
+
+    Original dataset metadata:
+    {original_metadata}
+
+    Search dataset metadata:
+    {search_metadata}
+
+    Please score each dimension on a scale of 0-10 for matching degree, where:
+    - 10 points: Complete match or highly similar
+    - 0 points: Complete mismatch or opposite
+    - Output an integer score. If a dimension is missing or meaningless in one or both metadata, mark it as null
+
+    Please output the result strictly in the following JSON format:
+
+    {{
+        "introduction": score or null,
+        "task": score or null,
+        "question": score or null,
+        "input": score or null,
+        "output": score or null,
+        "source": score or null,
+        "example": score or null,
+        "samples_count": score or null,
+        "average": average score (excluding null values) or null
+    }}
+
+    Note:
+    1. Only output JSON format, do not include any other text
+    2. Scores must be numbers between 0-10 or null
+    3. average is the mean of all non-null scores
+
+# 统计配置
+statistics:
+  # 是否计算详细统计
+  detailed_stats: true
+  # 是否包含原始响应
+  include_raw_responses: true
+  # 统计输出格式
+  output_format: "json"

@@ -1,0 +1,145 @@
+# pipeline settings for evaluation
+# add parameters that are not in evaluation/config.yaml
+
+# target data models (these models generated data for SFT LLaMA-3.1-8B)
+target_data_models:
+  gpt-4o-search-preview:
+    display_name: "gpt-4o-search"  # name in CSV
+    description: "GPT-4o with search preview"
+    
+  gpt-4o-mini-search-preview: 
+    display_name: "gpt-4o-mini-search"
+    description: "GPT-4o mini with search preview"
+    
+  o3-w:
+    display_name: "gpt-o3"  
+    description: "GPT-o3 with examples"
+    
+  o3-wo:
+    display_name: "gpt-o3-wo"
+    description: "GPT-o3 without examples"
+    
+  gemini:
+    display_name: "gemini"
+    description: "Google Gemini model"
+    
+  grok:
+    display_name: "grok"
+    description: "Grok model"
+    
+  openai:
+    display_name: "openai"
+    description: "OpenAI model"
+
+# evaluation settings combination
+evaluation_settings:
+  # base model for SFT (fixed)
+  sft_model: "llama3_8b"  # key in evaluation/config.yaml
+  sft_model_display_name: "LLaMA-3.1-8B"  # only show in baseline row
+  
+  # evaluation method settings
+  methods:
+    fine_tune:
+      config_path: "evaluation/config.yaml"
+      mode: "eval"  # --step eval, --step test
+      baseline: false
+      display_name: "fine-tune"
+      filename_patterns: ["{model_key}_eval"]
+      
+    baseline:
+      config_path: "evaluation/config.yaml" 
+      mode: "eval"
+      baseline: true  # --baseline, --test
+      display_name: "baseline"
+      filename_patterns: ["final_baseline", "final_test"]
+      
+    few_shot:
+      config_path: "configs/config_few_shot.yaml"
+      mode: "eval" 
+      baseline: true
+      display_name: "few-shot"
+      filename_patterns: ["{model_key}_baseline_few_shot", "{model_key}_baseline_fewshot"]
+      
+    one_shot:
+      config_path: "configs/config_1_shot.yaml"
+      mode: "eval"
+      baseline: true  
+      display_name: "1-shot"
+      filename_patterns: ["{model_key}_baseline_1shot"]
+      
+    five_shot:
+      config_path: "configs/config_5_shot.yaml"
+      mode: "eval"
+      baseline: true
+      display_name: "5-shot"
+      filename_patterns: ["{model_key}_baseline_5shot"]
+
+# dataset file config
+dataset_files:
+  # auto search mode
+  auto_discover: true
+  
+  # search path
+  search_path: "datasets/results/"
+  
+  # file name pattern (for matching data generation models)
+  patterns:
+    - "search_gpt-4o-search-preview.json"
+    - "search_gpt-4o-mini-search-preview.json" 
+    - "generation_o3-w.json"
+    - "generation_o3-wo.json"
+  
+  # or manually specify file list
+  manual_files: []
+  
+  # domain metadata files for different dataset sizes
+  domain_metadata_files:
+    full_set:
+      file_path: "datasets/results/search_gpt-4o-search-preview.json"
+    mini_set:
+      file_path: "datasets/results/search_gpt-4o-mini-search-preview.json"  
+
+# output config
+output:
+  csv_filename: "evaluation_summary.csv"
+  save_path: "evaluation/results/"
+  
+  # CSV format settings
+  format:
+    decimal_places: 4
+    include_std: true
+    
+  # special row settings
+  baseline_row:
+    position: "first"  # first row
+    model_name: "LLaMA-3.1-8B"  # baseline row, Model column shows base model name
+    method_name: "baseline"
+
+# filename mapping rules - complete mapping from filename patterns to model+method
+filename_mappings:
+  # baseline files
+  baseline:
+    model_key: null  # null means use sft_model_display_name
+    method_key: "zero_shot"
+  test:
+    model_key: null  # null means use sft_model_display_name  
+    method_key: "zero_shot"
+  
+  # data model files (auto-generated based on target_data_models)
+  # format: {model_key}_baseline_{shot} maps to model_key + shot method
+  # format: {model_key}_test maps to model_key + fine_tune method
+  # format: {model_key}_eval maps to model_key + fine_tune method
+
+# execution control
+execution:
+  # execution step switch
+  run_evaluation: true
+  process_results: true
+  
+  # performance settings
+  max_concurrent_evaluations: 1
+  timeout_seconds: 3600
+  
+  # debug settings
+  verbose: true
+  save_intermediate_results: false
