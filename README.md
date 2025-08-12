@@ -1,6 +1,6 @@
 # DatasetResearch: Benchmarking Agent Systems for Demand-Driven Dataset Discovery
 
-[![arXiv](https://img.shields.io/badge/arXiv-2501.00000-b31b1b.svg)](https://arxiv.org/abs/2501.00000)
+[![arXiv](https://img.shields.io/badge/arXiv-2508.06960-b31b1b.svg)](https://arxiv.org/abs/2508.06960)
 [![🤗 Hugging Face Dataset](https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-orange)](https://huggingface.co/datasets/GAIR/DatasetResearch)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
@@ -332,11 +332,10 @@ For questions, issues, or contributions:
 
 This framework is designed for:
 
-- **Dataset Quality Assessment**: Evaluate and compare dataset quality with standardized metrics
-- **Synthetic Data Research**: Generate and assess synthetic training data with consistent ID tracking
-- **Model Performance Analysis**: Comprehensive model evaluation across tasks and domains
-- **Automated ML Pipelines**: End-to-end automated machine learning workflows
 - **Agent System Benchmarking**: Compare different agent systems for dataset discovery
+- **Dataset Quality Assessment**: Evaluate and compare dataset quality with standardized metrics
+- **Model Performance Analysis**: Comprehensive model evaluation across tasks and domains
+
 
 ## 📁 Project Structure
 
