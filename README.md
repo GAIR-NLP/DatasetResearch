@@ -298,11 +298,14 @@ evaluation_settings:
 If you use this framework in your research, please cite our paper:
 
 ```bibtex
-@article{gair2025datasetresearch,
-  title={DatasetResearch: Benchmarking Agent Systems for Demand-Driven Dataset Discovery},
-  author={Jiang, Minghao and others},
-  journal={arXiv preprint arXiv:2501.00000},
-  year={2025}
+@misc{li2025datasetresearchbenchmarkingagentsystems,
+      title={DatasetResearch: Benchmarking Agent Systems for Demand-Driven Dataset Discovery}, 
+      author={Keyu Li and Mohan Jiang and Dayuan Fu and Yunze Wu and Xiangkun Hu and Dequan Wang and Pengfei Liu},
+      year={2025},
+      eprint={2508.06960},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2508.06960}, 
 }
 ```
 
