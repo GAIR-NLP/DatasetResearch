@@ -9,7 +9,7 @@
 
 ![Teaser](assets/teaser.png)
 
-The first comprehensive benchmark for evaluating AI agents' ability to discover and synthesize datasets from real-world demands across knowledge-intensive and reasoning-intensive tasks. Our tri-dimensional evaluation framework reveals that even advanced systems achieve only 20% accuracy, establishing rigorous baselines for autonomous dataset discovery and illuminating the path toward AI capable of finding any dataset in the digital universe.
+Thid id the first comprehensive benchmark for evaluating AI agents' ability to discover and synthesize datasets from real-world demands across knowledge-intensive and reasoning-intensive tasks. Our tri-dimensional evaluation framework reveals that even advanced systems achieve only 20% accuracy, establishing rigorous baselines for autonomous dataset discovery and illuminating the path toward AI capable of finding any dataset in the digital universe.
 
 ## 🚀 Features
 
