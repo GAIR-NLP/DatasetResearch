@@ -381,8 +381,8 @@ def main():
     try:
         llm_caller = CallLLM(
             model="o3-mini",
-            api_base="https://guohe-apim.azure-api.net",
-            api_key='f847dd7d5eff4fc0bff57d061813a4ab'
+            api_base="",
+            api_key=''
         )
     except Exception as e:
         logger.error(f"Failed to initialize LLM caller: {str(e)}")

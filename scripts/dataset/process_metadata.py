@@ -68,7 +68,7 @@ def transfer_metadata_paperwithcode(sample:Dict[str, Any]) -> Dict[str, Any]:
     
     
     # 使用llm来判断属于哪个task_type
-    llm_caller = CallLLM(api_base="https://guohe-apim.azure-api.net", api_key="f847dd7d5eff4fc0bff57d061813a4ab", model="o3-mini")
+    llm_caller = CallLLM(api_base="", api_key="", model="o3-mini")
     messages = [
         {"role": "system", "content": "You are a helpful assistant that can help me classify the task type of a dataset. The task types only are: multiple-choice, question-answering, summarization, text-classification, text-generation, translation. You should only return the task type, no other text."},
         {"role": "user", "content": f"The dataset is {sample['dataset']}, the introduction is {processed_sample['introduction']}, the question is {sample['structured_query']['question']} and the sample example is {sample['scheme']}"}

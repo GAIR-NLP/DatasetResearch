@@ -46,8 +46,8 @@ class MetadataGenerationConfig:
     llm_config: Dict[str, Any] = field(default_factory=lambda: {
         "model_name": "gpt-4o-search-preview",
         "api_model": "o3", 
-        "api_base": "https://gpt.yunstorm.com/",
-        "api_key": "f847dd7d5eff4fc0bff57d061813a4ab",
+        "api_base": "",
+        "api_key": "",
         "max_retries": 10,
         "retry_interval": 1
     })

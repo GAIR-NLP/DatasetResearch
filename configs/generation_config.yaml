@@ -33,9 +33,9 @@ generation_params:
 # Azure OpenAI API配置
 azure_openai:
   # API端点
-  api_endpoint: "https://guohe-apim.azure-api.net"
+  api_endpoint: ""
   # API密钥 (可通过环境变量覆盖: AZURE_OPENAI_API_KEY)
-  api_key: "f847dd7d5eff4fc0bff57d061813a4ab"
+  api_key: ""
   # API版本
   api_version: "2025-01-01-preview"
   # 使用的模型
